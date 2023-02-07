@@ -1,17 +1,17 @@
 public class ExceptionPropogation {
 
     static  class test {
-        void m() {
+        void dudee1() {
             int data = 50 / 0;
         }
 
-        void n() {
-            m();
+        void dudee2() {
+            dudee1();
         }
 
         void p() {
             try {
-                n();
+                dudee2();
             } catch (java.lang.Exception e) {
                 System.out.println("exception handled");
             }
