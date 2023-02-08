@@ -21,9 +21,10 @@ public class studcontroller {
         return this.studentService.createStudent(student);
     }
     //delete
-    @DeleteMapping("/deletestudent")
+    @DeleteMapping("/deletestudent/{id}")
     public String deleteStudent(@PathVariable int id){
-        return this.studentService.deleteStudent(id);
+         this.studentService.deleteStudent(id);
+        return "deleted";
     }
 
     @PutMapping("/updateStudent/{id}")
