@@ -18,7 +18,8 @@ public class studcontroller {
 
     @PostMapping("/createstudent")
     public String createStudent(@RequestBody Student student){
-        return this.studentService.createStudent(student);
+         this.studentService.createStudent(student);
+        return "created";
     }
     //delete
     @DeleteMapping("/deletestudent/{id}")
