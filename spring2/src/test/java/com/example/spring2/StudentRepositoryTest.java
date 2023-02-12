@@ -1,4 +1,4 @@
-package com.example.spring2.repo;
+package com.example.spring2;
 
 import com.example.spring2.models.Student;
 import com.example.spring2.repository.StudentRepository;
